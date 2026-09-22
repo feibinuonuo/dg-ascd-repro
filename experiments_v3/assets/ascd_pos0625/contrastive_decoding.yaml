@@ -1,0 +1,3 @@
+if_cd: True
+cd_alpha: 1.0
+cd_beta: 0.1

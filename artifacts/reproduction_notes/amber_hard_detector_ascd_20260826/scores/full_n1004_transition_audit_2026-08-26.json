@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "num_images": 1004,
+  "caption_transition_counts": {
+    "fixed_clean_detector_clean": 684,
+    "fixed_clean_detector_hall": 14,
+    "fixed_hall_detector_clean": 43,
+    "fixed_hall_detector_hall": 263
+  },
+  "caption_exact_match_count": 768,
+  "caption_changed_count": 236,
+  "masked_caption_changed_count": 236,
+  "masked_caption_unchanged_count": 264,
+  "selection_change_caption_changed_count": 235,
+  "detector_action_image_counts": {
+    "candidate_images": 947,
+    "masked_images": 500,
+    "selection_change_images": 396,
+    "finite_protection_images": 179
+  },
+  "word_delta_detector_minus_fixed": {
+    "mean": -0.6533864541832669,
+    "min": -301,
+    "max": 302,
+    "positive": 96,
+    "zero": 802,
+    "negative": 106
+  }
+}

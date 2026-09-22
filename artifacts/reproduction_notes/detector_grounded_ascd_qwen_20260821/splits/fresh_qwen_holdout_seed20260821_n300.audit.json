@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "manifest": "reproduction_notes/detector_grounded_ascd_qwen_20260821/splits/fresh_qwen_holdout_seed20260821_n300.json",
+  "manifest_sha256": "1046f1aec5979a9fd16562432e893b4fe502a43d02d0de62f6a74dd1610fabff",
+  "csv": "reproduction_notes/detector_grounded_ascd_qwen_20260821/splits/fresh_qwen_holdout_seed20260821_n300.csv",
+  "csv_sha256": "e817b948dcef383c9cf57376294b40d520136e4c0938d0601749db7531649dfa",
+  "count": 300,
+  "unique_image_ids": 300,
+  "available_image_files": 300,
+  "intersection_with_all_exclusions": 0,
+  "exclusion_count": 1000,
+  "selection_seed": 20260821
+}

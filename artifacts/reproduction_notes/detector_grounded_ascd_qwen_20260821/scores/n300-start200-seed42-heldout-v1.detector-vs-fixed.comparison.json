@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_qwen_20260821/scores/n300-start200-seed42-heldout-v1.fixed.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_qwen_20260821/scores/n300-start200-seed42-heldout-v1.detector.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.17,
+      "candidate": 0.09666666666666666,
+      "delta_candidate_minus_baseline": -0.07333333333333335
+    },
+    "CHAIRi": {
+      "baseline": 0.07446808510638298,
+      "candidate": 0.05313351498637602,
+      "delta_candidate_minus_baseline": -0.021334570120006953
+    },
+    "Recall": {
+      "baseline": 0.4,
+      "candidate": 0.3863157894736842,
+      "delta_candidate_minus_baseline": -0.013684210526315799
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.17,
+      "candidate_mean": 0.09666666666666666,
+      "delta_candidate_minus_baseline": -0.07333333333333335,
+      "bootstrap_ci95": [
+        -0.10341666666666667,
+        -0.04666666666666666
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.07446808510638298,
+      "candidate_mean": 0.05313351498637602,
+      "delta_candidate_minus_baseline": -0.021334570120006953,
+      "bootstrap_ci95": [
+        -0.03516215783939257,
+        -0.007819469279870178
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.4,
+      "candidate_mean": 0.3863157894736842,
+      "delta_candidate_minus_baseline": -0.013684210526315799,
+      "bootstrap_ci95": [
+        -0.027563789975370304,
+        0.0010396641411286023
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}

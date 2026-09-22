@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "method": "Detector-Grounded ASCD",
+  "status": "frozen",
+  "parent": "fixed_ascd_pos0625",
+  "threshold": 0.14235107600688934,
+  "top_k": 16,
+  "candidate_policy": "among finite ASCD post-processor top-k tokens, mask only a canonical CHAIR-object candidate with cached OWLv2 score < threshold",
+  "fallback_policy": "never use Vanilla logits or token; if masking would leave no finite token, retain the original ASCD distribution",
+  "non_object_policy": "leave all non-object ASCD scores unchanged",
+  "runtime_detector": "google/owlv2-base-patch16-ensemble",
+  "runtime_prompt": "a photo of a {object}",
+  "runtime_score": "max sigmoid OWLv2 detection logit over predicted boxes for each query",
+  "sensitivity_axis": "top_k",
+  "frozen_reference_top_k": 8,
+  "calibration": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/calibration/detector-owlv2-profile100-199-seed20260812-v1.json",
+  "calibration_model_file_sha256": {"model.safetensors": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7"}
+}

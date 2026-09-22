@@ -1,0 +1,495 @@
+{
+  "arms": {
+    "Detector": {
+      "path": "/root/projects/ASCD-main/reproduction_notes/hard_detector_pope_evaluation_20260824/runs/detector-full-n8910.answers.jsonl",
+      "sha256": "8ae1fc6fc2c411f88ebf41040ce37367020752f7fe7bcff5a0536dcd9075fd8b"
+    },
+    "Fixed": {
+      "path": "/root/projects/ASCD-main/reproduction_notes/hard_detector_pope_evaluation_20260824/runs/fixed-full-n8910.answers.jsonl",
+      "sha256": "57f334e5b068983f2d2b56b8394fdfcb1ed01be72185624c78daccfa23fc5120"
+    },
+    "Vanilla": {
+      "path": "/root/projects/ASCD-main/reproduction_notes/hard_detector_pope_evaluation_20260824/runs/vanilla-full-n8910.answers.jsonl",
+      "sha256": "b3ae61b9354c1380e396904a600acb5c17ed282e0922a398c19e6105e119ef0c"
+    }
+  },
+  "categories": {
+    "adversarial": {
+      "metrics": {
+        "Detector": {
+          "accuracy": 0.8203333333333334,
+          "f1": 0.8232207281075762,
+          "fn": 245,
+          "fp": 294,
+          "n": 3000,
+          "precision": 0.8102001291155584,
+          "recall": 0.8366666666666667,
+          "tn": 1206,
+          "tp": 1255,
+          "yes_ratio": 0.5163333333333333
+        },
+        "Fixed": {
+          "accuracy": 0.8203333333333334,
+          "f1": 0.8232207281075762,
+          "fn": 245,
+          "fp": 294,
+          "n": 3000,
+          "precision": 0.8102001291155584,
+          "recall": 0.8366666666666667,
+          "tn": 1206,
+          "tp": 1255,
+          "yes_ratio": 0.5163333333333333
+        },
+        "Vanilla": {
+          "accuracy": 0.851,
+          "f1": 0.8414331323164241,
+          "fn": 314,
+          "fp": 133,
+          "n": 3000,
+          "precision": 0.8991660348749052,
+          "recall": 0.7906666666666666,
+          "tn": 1367,
+          "tp": 1186,
+          "yes_ratio": 0.43966666666666665
+        }
+      },
+      "paired_vs_reference": {
+        "Detector": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2461,
+            "reference_correct_to_candidate_wrong": 0,
+            "reference_wrong_to_candidate_correct": 0,
+            "reference_wrong_to_candidate_wrong": 539
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              0.0,
+              0.0
+            ],
+            "f1": [
+              0.0,
+              0.0
+            ],
+            "precision": [
+              0.0,
+              0.0
+            ],
+            "recall": [
+              0.0,
+              0.0
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              0.0,
+              0.0
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.0,
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "yes_ratio": 0.0
+          }
+        },
+        "Vanilla": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2312,
+            "reference_correct_to_candidate_wrong": 149,
+            "reference_wrong_to_candidate_correct": 241,
+            "reference_wrong_to_candidate_wrong": 298
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              0.017658333333333387,
+              0.04400000000000004
+            ],
+            "f1": [
+              0.004680256627606583,
+              0.03188529365020603
+            ],
+            "precision": [
+              0.07357266886354681,
+              0.10434206321334387
+            ],
+            "recall": [
+              -0.06380511268735549,
+              -0.02747642244167569
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              -0.08934166666666671,
+              -0.063
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.03066666666666662,
+            "f1": 0.018212404208847954,
+            "precision": 0.08896590575934682,
+            "recall": -0.04600000000000004,
+            "yes_ratio": -0.07666666666666666
+          }
+        }
+      }
+    },
+    "pooled": {
+      "metrics": {
+        "Detector": {
+          "accuracy": 0.8619528619528619,
+          "f1": 0.8595890410958904,
+          "fn": 735,
+          "fp": 495,
+          "n": 8910,
+          "precision": 0.8838028169014085,
+          "recall": 0.8366666666666667,
+          "tn": 3915,
+          "tp": 3765,
+          "yes_ratio": 0.4781144781144781
+        },
+        "Fixed": {
+          "accuracy": 0.8619528619528619,
+          "f1": 0.8595890410958904,
+          "fn": 735,
+          "fp": 495,
+          "n": 8910,
+          "precision": 0.8838028169014085,
+          "recall": 0.8366666666666667,
+          "tn": 3915,
+          "tp": 3765,
+          "yes_ratio": 0.4781144781144781
+        },
+        "Vanilla": {
+          "accuracy": 0.8681257014590348,
+          "f1": 0.8582800627186105,
+          "fn": 942,
+          "fp": 233,
+          "n": 8910,
+          "precision": 0.9385386441572144,
+          "recall": 0.7906666666666666,
+          "tn": 4177,
+          "tp": 3558,
+          "yes_ratio": 0.4254769921436588
+        }
+      },
+      "paired_vs_reference": {
+        "Detector": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 7680,
+            "reference_correct_to_candidate_wrong": 0,
+            "reference_wrong_to_candidate_correct": 0,
+            "reference_wrong_to_candidate_wrong": 1230
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              0.0,
+              0.0
+            ],
+            "f1": [
+              0.0,
+              0.0
+            ],
+            "precision": [
+              0.0,
+              0.0
+            ],
+            "recall": [
+              0.0,
+              0.0
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              0.0,
+              0.0
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.0,
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "yes_ratio": 0.0
+          }
+        },
+        "Vanilla": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 7248,
+            "reference_correct_to_candidate_wrong": 432,
+            "reference_wrong_to_candidate_correct": 487,
+            "reference_wrong_to_candidate_wrong": 743
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              -0.0005611672278339475,
+              0.01313411896745238
+            ],
+            "f1": [
+              -0.008845115681391869,
+              0.0062738068633908265
+            ],
+            "precision": [
+              0.04715921199566019,
+              0.0625533542967512
+            ],
+            "recall": [
+              -0.05653312140228695,
+              -0.035539335809047654
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              -0.059037598204264866,
+              -0.04691077441077439
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.006172839506172867,
+            "f1": -0.0013089783772799457,
+            "precision": 0.05473582725580595,
+            "recall": -0.04600000000000004,
+            "yes_ratio": -0.0526374859708193
+          }
+        }
+      }
+    },
+    "popular": {
+      "metrics": {
+        "Detector": {
+          "accuracy": 0.87,
+          "f1": 0.8655172413793103,
+          "fn": 245,
+          "fp": 145,
+          "n": 3000,
+          "precision": 0.8964285714285715,
+          "recall": 0.8366666666666667,
+          "tn": 1355,
+          "tp": 1255,
+          "yes_ratio": 0.4666666666666667
+        },
+        "Fixed": {
+          "accuracy": 0.87,
+          "f1": 0.8655172413793103,
+          "fn": 245,
+          "fp": 145,
+          "n": 3000,
+          "precision": 0.8964285714285715,
+          "recall": 0.8366666666666667,
+          "tn": 1355,
+          "tp": 1255,
+          "yes_ratio": 0.4666666666666667
+        },
+        "Vanilla": {
+          "accuracy": 0.8723333333333333,
+          "f1": 0.8609800362976406,
+          "fn": 314,
+          "fp": 69,
+          "n": 3000,
+          "precision": 0.9450199203187251,
+          "recall": 0.7906666666666666,
+          "tn": 1431,
+          "tp": 1186,
+          "yes_ratio": 0.41833333333333333
+        }
+      },
+      "paired_vs_reference": {
+        "Detector": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2610,
+            "reference_correct_to_candidate_wrong": 0,
+            "reference_wrong_to_candidate_correct": 0,
+            "reference_wrong_to_candidate_wrong": 390
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              0.0,
+              0.0
+            ],
+            "f1": [
+              0.0,
+              0.0
+            ],
+            "precision": [
+              0.0,
+              0.0
+            ],
+            "recall": [
+              0.0,
+              0.0
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              0.0,
+              0.0
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.0,
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "yes_ratio": 0.0
+          }
+        },
+        "Vanilla": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2467,
+            "reference_correct_to_candidate_wrong": 143,
+            "reference_wrong_to_candidate_correct": 150,
+            "reference_wrong_to_candidate_wrong": 240
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              -0.009000000000000008,
+              0.01466666666666661
+            ],
+            "f1": [
+              -0.01757401907779047,
+              0.009180259208578461
+            ],
+            "precision": [
+              0.03559964785923148,
+              0.06180059184293366
+            ],
+            "recall": [
+              -0.06523229233720379,
+              -0.026417905125999706
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              -0.05867500000000003,
+              -0.03699166666666665
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.0023333333333332984,
+            "f1": -0.00453720508166966,
+            "precision": 0.048591348890153596,
+            "recall": -0.04600000000000004,
+            "yes_ratio": -0.04833333333333334
+          }
+        }
+      }
+    },
+    "random": {
+      "metrics": {
+        "Detector": {
+          "accuracy": 0.8965635738831615,
+          "f1": 0.8929206688011384,
+          "fn": 245,
+          "fp": 56,
+          "n": 2910,
+          "precision": 0.9572845156369184,
+          "recall": 0.8366666666666667,
+          "tn": 1354,
+          "tp": 1255,
+          "yes_ratio": 0.4505154639175258
+        },
+        "Fixed": {
+          "accuracy": 0.8965635738831615,
+          "f1": 0.8929206688011384,
+          "fn": 245,
+          "fp": 56,
+          "n": 2910,
+          "precision": 0.9572845156369184,
+          "recall": 0.8366666666666667,
+          "tn": 1354,
+          "tp": 1255,
+          "yes_ratio": 0.4505154639175258
+        },
+        "Vanilla": {
+          "accuracy": 0.8814432989690721,
+          "f1": 0.8730217151269783,
+          "fn": 314,
+          "fp": 31,
+          "n": 2910,
+          "precision": 0.9745275267050123,
+          "recall": 0.7906666666666666,
+          "tn": 1379,
+          "tp": 1186,
+          "yes_ratio": 0.418213058419244
+        }
+      },
+      "paired_vs_reference": {
+        "Detector": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2609,
+            "reference_correct_to_candidate_wrong": 0,
+            "reference_wrong_to_candidate_correct": 0,
+            "reference_wrong_to_candidate_wrong": 301
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              0.0,
+              0.0
+            ],
+            "f1": [
+              0.0,
+              0.0
+            ],
+            "precision": [
+              0.0,
+              0.0
+            ],
+            "recall": [
+              0.0,
+              0.0
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              0.0,
+              0.0
+            ]
+          },
+          "point_delta": {
+            "accuracy": 0.0,
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "yes_ratio": 0.0
+          }
+        },
+        "Vanilla": {
+          "correctness_transitions": {
+            "reference_correct_to_candidate_correct": 2469,
+            "reference_correct_to_candidate_wrong": 140,
+            "reference_wrong_to_candidate_correct": 96,
+            "reference_wrong_to_candidate_wrong": 205
+          },
+          "paired_bootstrap_ci95": {
+            "accuracy": [
+              -0.02577319587628868,
+              -0.0044673539518900185
+            ],
+            "f1": [
+              -0.03162028724874226,
+              -0.008287476497156762
+            ],
+            "precision": [
+              0.00836181660154596,
+              0.02761636614670742
+            ],
+            "recall": [
+              -0.0639546511627907,
+              -0.028869840133307918
+            ],
+            "repetitions": 1000,
+            "yes_ratio": [
+              -0.04329896907216496,
+              -0.021993127147766356
+            ]
+          },
+          "point_delta": {
+            "accuracy": -0.015120274914089404,
+            "f1": -0.019898953674160058,
+            "precision": 0.017243011068093894,
+            "recall": -0.04600000000000004,
+            "yes_ratio": -0.03230240549828178
+          }
+        }
+      }
+    }
+  },
+  "normalization": "project eval_pope first-sentence yes/no rule",
+  "questions": "/root/projects/ASCD-main/data/llava_dataset/pope/llava_pope_test.jsonl",
+  "questions_sha256": "1d3b41f0dced74b4f361c659787ef673497cfac54a6be7bde00eb405bab03c70",
+  "reference": "Fixed",
+  "schema_version": 1
+}

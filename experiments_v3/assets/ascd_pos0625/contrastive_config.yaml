@@ -1,0 +1,9 @@
+method_steer_sys: "none"
+method_steer_vis: "all"
+method_steer_text: "none"
+upscale_sys: 0.0
+downscale_vis: 1.0
+upscale_text: 0.0
+topk_vis_token_for_downscale: 0.1
+hall_head_score_map: null
+topk_hall_heads: 1024

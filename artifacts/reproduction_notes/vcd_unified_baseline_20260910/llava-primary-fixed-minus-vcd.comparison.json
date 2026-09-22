@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/vcd_unified_baseline_20260910/llava-vcd-n300-start200-seed42-primary.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/scores/n300-start200-seed42-derived-v2.fixed.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.54,
+      "candidate": 0.30333333333333334,
+      "delta_candidate_minus_baseline": -0.2366666666666667
+    },
+    "CHAIRi": {
+      "baseline": 0.1510307109802272,
+      "candidate": 0.08229124647035095,
+      "delta_candidate_minus_baseline": -0.06873946450987624
+    },
+    "Recall": {
+      "baseline": 0.8221052631578948,
+      "candidate": 0.6926315789473684,
+      "delta_candidate_minus_baseline": -0.1294736842105264
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.54,
+      "candidate_mean": 0.30333333333333334,
+      "delta_candidate_minus_baseline": -0.2366666666666667,
+      "bootstrap_ci95": [
+        -0.29999999999999993,
+        -0.17658333333333376
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.1510307109802272,
+      "candidate_mean": 0.08229124647035095,
+      "delta_candidate_minus_baseline": -0.06873946450987624,
+      "bootstrap_ci95": [
+        -0.08870892565467618,
+        -0.048935943925666144
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.8221052631578948,
+      "candidate_mean": 0.6926315789473684,
+      "delta_candidate_minus_baseline": -0.1294736842105264,
+      "bootstrap_ci95": [
+        -0.15618310433772598,
+        -0.1033359159677782
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}

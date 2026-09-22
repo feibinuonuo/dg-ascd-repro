@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/scores/n300-start200-seed42-derived-v2.fixed.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/scores/n300-start200-seed42-derived-v2.detector.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.30333333333333334,
+      "candidate": 0.25,
+      "delta_candidate_minus_baseline": -0.053333333333333344
+    },
+    "CHAIRi": {
+      "baseline": 0.08229124647035095,
+      "candidate": 0.061615320566194835,
+      "delta_candidate_minus_baseline": -0.020675925904156116
+    },
+    "Recall": {
+      "baseline": 0.6926315789473684,
+      "candidate": 0.6852631578947368,
+      "delta_candidate_minus_baseline": -0.00736842105263158
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.30333333333333334,
+      "candidate_mean": 0.25,
+      "delta_candidate_minus_baseline": -0.053333333333333344,
+      "bootstrap_ci95": [
+        -0.08666666666666664,
+        -0.02325000000000044
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.08229124647035095,
+      "candidate_mean": 0.061615320566194835,
+      "delta_candidate_minus_baseline": -0.020675925904156116,
+      "bootstrap_ci95": [
+        -0.031950188370269916,
+        -0.010398230001623118
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.6926315789473684,
+      "candidate_mean": 0.6852631578947368,
+      "delta_candidate_minus_baseline": -0.00736842105263158,
+      "bootstrap_ci95": [
+        -0.02018050586990483,
+        0.0056947608200454995
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}

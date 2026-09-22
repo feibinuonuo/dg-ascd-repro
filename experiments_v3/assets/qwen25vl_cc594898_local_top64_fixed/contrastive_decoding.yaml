@@ -1,0 +1,4 @@
+if_cd: true
+cd_alpha: 1.0
+cd_beta: 0.1
+adaptive_alpha: false

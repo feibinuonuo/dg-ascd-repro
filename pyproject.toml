@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ASCD"
+version = "1.2.2.post1"
+description = "ASCD"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "torch==2.1.2", "torchvision==0.16.2",
+    "sentencepiece==0.1.99", "shortuuid",
+    "peft", "bitsandbytes",
+    "pydantic", "markdown2[all]", "numpy", "scikit-learn==1.2.2",
+    "gradio==5.9.1", "gradio_client==1.5.2",
+    "requests", "httpx==0.28.1", "uvicorn", "fastapi",
+    "einops==0.6.1", "einops-exts==0.0.4", "timm==0.6.13",
+    "omegaconf==2.3.0", "decord==0.6.0",
+    "iopath==0.1.10", "webdataset==0.2.86", "opencv-python==4.11.0.86", 
+    "fairscale==0.4.13", "diffusers==0.14.0", "ipython==8.12.3",
+    "spacy==3.7.5", "pycocoevalcap==1.2", "protobuf", "debugpy", "nltk", "openai"
+]
+
+[project.optional-dependencies]
+
+llava_series = [
+    "huggingface-hub==0.25.1",
+    "transformers==4.39.3",
+    "accelerate==0.21.0",
+    "tokenizers==0.15.2",
+]
+# (Qwen2.5-VL)
+qwen = [
+    "huggingface-hub==0.34.2",
+    "transformers==4.51.3",
+    "accelerate==0.27.0",
+    "tokenizers==0.21.4",
+]
+train = ["deepspeed==0.12.6", "ninja", "wandb"]
+build = ["build", "twine"]
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]

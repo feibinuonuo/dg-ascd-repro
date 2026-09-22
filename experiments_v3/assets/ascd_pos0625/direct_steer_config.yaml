@@ -1,0 +1,9 @@
+method_steer_sys: "none"
+method_steer_vis: "hall-head"
+method_steer_text: "none"
+upscale_sys: 0.0
+downscale_vis: -0.625
+upscale_text: 0.0
+topk_vis_token_for_downscale: 1.0
+hall_head_score_map: text_centric_heads/hallucination-heads-score-map-top32-llava1.5.pt
+topk_hall_heads: 32

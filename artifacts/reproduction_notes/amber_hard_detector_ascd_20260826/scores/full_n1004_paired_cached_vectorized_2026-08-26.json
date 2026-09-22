@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "bootstrap_implementation": "vectorized-equivalent-v1",
+  "benchmark": "AMBER-generative",
+  "num_paired_images": 1004,
+  "metrics": {
+    "Vanilla": {
+      "CHAIR": 7.151772341487768,
+      "Cover": 50.562600464368636,
+      "Hal": 32.47011952191235,
+      "Cog": 3.777416734362307,
+      "mean_caption_words": 74.83266932270917,
+      "counts": {
+        "chair_score": 573,
+        "chair_num": 8012,
+        "cover_score": 2831,
+        "cover_num": 5599,
+        "cog_score": 186,
+        "cog_num": 4924,
+        "non_hallu_score": 678,
+        "non_hallu_num": 1004,
+        "caption_words": 75132
+      }
+    },
+    "Fixed": {
+      "CHAIR": 5.964948242287589,
+      "Cover": 48.955170566172534,
+      "Hal": 30.478087649402397,
+      "Cog": 2.1324126726238832,
+      "mean_caption_words": 80.33565737051792,
+      "counts": {
+        "chair_score": 582,
+        "chair_num": 9757,
+        "cover_score": 2741,
+        "cover_num": 5599,
+        "cog_score": 105,
+        "cog_num": 4924,
+        "non_hallu_score": 698,
+        "non_hallu_num": 1004,
+        "caption_words": 80657
+      }
+    },
+    "Detector": {
+      "CHAIR": 5.456839449058984,
+      "Cover": 48.508662261118054,
+      "Hal": 27.589641434262944,
+      "Cog": 1.380991064175467,
+      "mean_caption_words": 79.68227091633466,
+      "counts": {
+        "chair_score": 519,
+        "chair_num": 9511,
+        "cover_score": 2716,
+        "cover_num": 5599,
+        "cog_score": 68,
+        "cog_num": 4924,
+        "non_hallu_score": 727,
+        "non_hallu_num": 1004,
+        "caption_words": 80001
+      }
+    }
+  },
+  "paired_detector_minus_fixed": {
+    "CHAIR": {
+      "point_estimate_pp": -0.5081087932286046,
+      "ci95_pp": [
+        -0.849177685770552,
+        -0.17764240599801145
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Hal": {
+      "point_estimate_pp": -2.888446215139453,
+      "ci95_pp": [
+        -4.382470119521912,
+        -1.494023904382459
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Cover": {
+      "point_estimate_pp": -0.44650830505447914,
+      "ci95_pp": [
+        -0.7832620574958424,
+        -0.12495537308104332
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Cog": {
+      "point_estimate_pp": -0.7514216084484162,
+      "ci95_pp": [
+        -1.0166734444896297,
+        -0.487606663957741
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "mean_caption_words": {
+      "point_estimate_pp": -0.6533864541832628,
+      "ci95_pp": [
+        -1.8486055776892414,
+        0.4820966135458114
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    }
+  },
+  "paired_fixed_minus_vanilla": {
+    "CHAIR": {
+      "point_estimate_pp": -1.1868240992001793,
+      "ci95_pp": [
+        -2.270082579623561,
+        -0.005005066579722842
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Hal": {
+      "point_estimate_pp": -1.9920318725099548,
+      "ci95_pp": [
+        -5.480577689243032,
+        1.4940239043824732
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Cover": {
+      "point_estimate_pp": -1.6074298981961022,
+      "ci95_pp": [
+        -2.5553639716779895,
+        -0.6519795071915763
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "Cog": {
+      "point_estimate_pp": -1.6450040617384238,
+      "ci95_pp": [
+        -2.1995926680244398,
+        -1.0787596343208037
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    },
+    "mean_caption_words": {
+      "point_estimate_pp": 5.502988047808756,
+      "ci95_pp": [
+        2.4579681274900476,
+        8.808814741035857
+      ],
+      "bootstrap_replicates": 10000,
+      "seed": 20260826
+    }
+  },
+  "detector_audit": {
+    "records": 1004,
+    "object_candidates_considered": 10657,
+    "masked_candidates": 1912,
+    "selection_changes": 690,
+    "no_finite_protections": 345,
+    "eos_terminated": 982,
+    "hit_max_new_tokens": 22
+  }
+}

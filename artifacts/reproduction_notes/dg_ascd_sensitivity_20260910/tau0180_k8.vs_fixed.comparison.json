@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/scores/n300-start200-seed42-derived-v2.fixed.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/dg_ascd_sensitivity_20260910/tau0180_k8.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.30333333333333334,
+      "candidate": 0.26,
+      "delta_candidate_minus_baseline": -0.043333333333333335
+    },
+    "CHAIRi": {
+      "baseline": 0.08229124647035095,
+      "candidate": 0.06296603148301574,
+      "delta_candidate_minus_baseline": -0.019325214987335207
+    },
+    "Recall": {
+      "baseline": 0.6926315789473684,
+      "candidate": 0.6757894736842105,
+      "delta_candidate_minus_baseline": -0.01684210526315788
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.30333333333333334,
+      "candidate_mean": 0.26,
+      "delta_candidate_minus_baseline": -0.043333333333333335,
+      "bootstrap_ci95": [
+        -0.08008333333333334,
+        -0.006666666666666654
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.08229124647035095,
+      "candidate_mean": 0.06296603148301574,
+      "delta_candidate_minus_baseline": -0.019325214987335207,
+      "bootstrap_ci95": [
+        -0.03241355108390399,
+        -0.007179412745735053
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.6926315789473684,
+      "candidate_mean": 0.6757894736842105,
+      "delta_candidate_minus_baseline": -0.01684210526315788,
+      "bootstrap_ci95": [
+        -0.034930826905510935,
+        0.0010257466529350495
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}

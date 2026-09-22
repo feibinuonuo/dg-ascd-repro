@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_qwen_20260821/scores/fresh-n300-seed20260821-threeway-v1.fixed.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_qwen_20260821/scores/fresh-n300-seed20260821-threeway-v1.detector.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.19333333333333333,
+      "candidate": 0.12333333333333334,
+      "delta_candidate_minus_baseline": -0.06999999999999999
+    },
+    "CHAIRi": {
+      "baseline": 0.09878048780487805,
+      "candidate": 0.05774278215223097,
+      "delta_candidate_minus_baseline": -0.04103770565264708
+    },
+    "Recall": {
+      "baseline": 0.425764192139738,
+      "candidate": 0.4017467248908297,
+      "delta_candidate_minus_baseline": -0.024017467248908297
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.19333333333333333,
+      "candidate_mean": 0.12333333333333334,
+      "delta_candidate_minus_baseline": -0.06999999999999999,
+      "bootstrap_ci95": [
+        -0.1,
+        -0.043333333333333335
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.09878048780487805,
+      "candidate_mean": 0.05774278215223097,
+      "delta_candidate_minus_baseline": -0.04103770565264708,
+      "bootstrap_ci95": [
+        -0.06080597989221712,
+        -0.02345584981652712
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.425764192139738,
+      "candidate_mean": 0.4017467248908297,
+      "delta_candidate_minus_baseline": -0.024017467248908297,
+      "bootstrap_ci95": [
+        -0.04031958515239485,
+        -0.009582891475119747
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}

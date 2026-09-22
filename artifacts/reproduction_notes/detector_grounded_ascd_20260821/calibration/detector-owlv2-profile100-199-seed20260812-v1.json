@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "method": "Detector-Grounded ASCD",
+  "status": "frozen",
+  "rule": "within ASCD top-k, mask completed CHAIR-object candidates only when OWLv2 max-box sigmoid score < threshold",
+  "threshold": 0.14235107600688934,
+  "threshold_selection": "selection-half maximum balanced accuracy, ties choose highest threshold",
+  "selection_metrics": {
+    "threshold": 0.14235107600688934,
+    "balanced_accuracy": 0.7308139534883721,
+    "true_positive_rate": 0.95,
+    "true_negative_rate": 0.5116279069767442
+  },
+  "feasibility_metrics": {
+    "pairs": 80,
+    "positive_pairs": 48,
+    "negative_pairs": 32,
+    "auc": 0.8274739583333334,
+    "score_min": 0.0033634924329817295,
+    "score_max": 0.8140527606010437,
+    "score_mean": 0.2519747546466533
+  },
+  "selection_summary": {
+    "pairs": 83,
+    "positive_pairs": 40,
+    "negative_pairs": 43,
+    "auc": 0.7441860465116279,
+    "score_min": 0.002790037775412202,
+    "score_max": 0.8828325867652893,
+    "score_mean": 0.27419716088628643
+  },
+  "detector": "google/owlv2-base-patch16-ensemble",
+  "prompt": "a photo of a {object}",
+  "score": "max sigmoid OWLv2 detection logit over predicted boxes for each query",
+  "diagnostic": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/detector_support_diagnostic-v1.json",
+  "audit_sha256": "6f2f74bb844f6dd89275cc6d8cf7aa66de83c78bd709da4ad91214b417603cb8",
+  "chair_sha256": "0faff8fe8e5e8514a95d8d69f026eb67dbffe9d503adf929f71c7031bebdb9e6",
+  "model_file_sha256": {
+    "model.safetensors": "e1e130b9e404cf91a75ad45644c1da9d7fa5284085eecc864266a6923efb99e7"
+  }
+}

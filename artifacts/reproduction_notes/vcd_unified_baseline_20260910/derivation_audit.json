@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "derivation": "lossless ordered slice from immutable VCD n=500 answers",
+  "start_index_zero_based": 200,
+  "end_index_exclusive": 500,
+  "num_rows": 300,
+  "image_ids_match_frozen_fixed_primary": true,
+  "source": "/root/projects/ASCD-main/data/llava_dataset/CHAIR/answers/llava_v1.5_7b-vcd.jsonl",
+  "source_sha256": "e8ea6232f063c37f79904c76cac840ee5e66da5e49c1e46561da8f9124ce5848",
+  "reference": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/runs/llava-detector-grounded-fixed-n300-start200-seed42-derived-v2.answers.jsonl",
+  "reference_sha256": "b7227782eb28ada40d6c29f2391ca3333823e715f798936a621ca8a8bb2fe3e7",
+  "output": "/root/projects/ASCD-main/reproduction_notes/vcd_unified_baseline_20260910/llava-vcd-n300-start200-seed42-primary.answers.jsonl",
+  "output_sha256": "a8cc0569f3a0d012b03b2de566a997c7d494a1b0d653333eaeb09609ef2967ec",
+  "first_image_id": 102671,
+  "last_image_id": 14029
+}

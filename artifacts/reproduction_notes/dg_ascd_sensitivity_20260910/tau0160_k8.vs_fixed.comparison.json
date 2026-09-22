@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "baseline": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/detector_grounded_ascd_20260821/scores/n300-start200-seed42-derived-v2.fixed.chair.json",
+    "labeled": null
+  },
+  "candidate": {
+    "chair": "/root/projects/ASCD-main/reproduction_notes/dg_ascd_sensitivity_20260910/tau0160_k8.chair.json",
+    "labeled": null
+  },
+  "num_paired_images": 300,
+  "overall_metrics": {
+    "CHAIRs": {
+      "baseline": 0.30333333333333334,
+      "candidate": 0.25333333333333335,
+      "delta_candidate_minus_baseline": -0.04999999999999999
+    },
+    "CHAIRi": {
+      "baseline": 0.08229124647035095,
+      "candidate": 0.06116584564860427,
+      "delta_candidate_minus_baseline": -0.02112540082174668
+    },
+    "Recall": {
+      "baseline": 0.6926315789473684,
+      "candidate": 0.6778947368421052,
+      "delta_candidate_minus_baseline": -0.01473684210526316
+    }
+  },
+  "paired_chair_metrics": {
+    "CHAIRs": {
+      "paired_samples": 300,
+      "estimand": "sentence_rate",
+      "baseline_mean": 0.30333333333333334,
+      "candidate_mean": 0.25333333333333335,
+      "delta_candidate_minus_baseline": -0.04999999999999999,
+      "bootstrap_ci95": [
+        -0.08333333333333334,
+        -0.016666666666666663
+      ]
+    },
+    "CHAIRi": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.08229124647035095,
+      "candidate_mean": 0.06116584564860427,
+      "delta_candidate_minus_baseline": -0.02112540082174668,
+      "bootstrap_ci95": [
+        -0.033179625985672014,
+        -0.010345054795556044
+      ]
+    },
+    "Recall": {
+      "paired_samples": 300,
+      "estimand": "corpus_level_ratio",
+      "baseline_mean": 0.6926315789473684,
+      "candidate_mean": 0.6778947368421052,
+      "delta_candidate_minus_baseline": -0.01473684210526316,
+      "bootstrap_ci95": [
+        -0.029678019398556202,
+        0.0010277492291880241
+      ]
+    }
+  },
+  "paired_token_metrics_by_label": {},
+  "interpretation_warning": null
+}
