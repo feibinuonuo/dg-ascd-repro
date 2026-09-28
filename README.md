@@ -2,7 +2,7 @@
 
 This repository accompanies *Detector-Grounded Contrastive Decoding for Object Hallucination Mitigation in Multimodal Large Language Models*. It releases the candidate-local DG-ASCD implementation, the frozen LLaVA/Qwen policies, split manifests, generated outputs, scoring results, and action audits. The main estimand is DG-ASCD minus its unchanged Fixed-ASCD parent on the same images. The LLaVA VCD run is a same-setting horizontal reference, not a parent-controlled intervention.
 
-**Release state:** locally curated; the GitHub remote and public URL are not yet assigned. Do not cite a repository URL until the private repository has been made public and its files are verified from a logged-out session.
+**Public repository:** <https://github.com/feibinuonuo/dg-ascd-repro>. Releases and Git commit identifiers provide versioned snapshots of the code and study-specific artifacts.
 
 ## What is here
 
